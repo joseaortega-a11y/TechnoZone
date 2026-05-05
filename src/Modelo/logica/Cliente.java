@@ -22,6 +22,7 @@ public class Cliente {
     public TipoCliente getTipo() {
         return tipo;
     }
+
     @Override
     public String toString(){
         return nombre + "(" + tipo + ")";

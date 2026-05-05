@@ -8,7 +8,7 @@ public class configuracionEmpresa {
 
     private configuracionEmpresa() {
         nombreEmpresa = "TechZone Solutions";
-        nit = "123456789";
+        nit = "1823465";
 
     }
 

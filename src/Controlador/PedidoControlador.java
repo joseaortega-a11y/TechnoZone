@@ -23,6 +23,7 @@ public class PedidoControlador {
         computadores.add(factory.crearComputador("GAMER"));
         computadores.add(factory.crearComputador("DISENADOR"));
         computadores.add(factory.crearComputador("PROGRAMADOR"));
+        computadores.add(factory.crearComputador("ESTUDIANTE"));
 
         return computadores;
     }
@@ -59,15 +60,7 @@ public class PedidoControlador {
         }
 
         return computadores;
-    }
 
-    public Pedido crearPedidoPredefinido(Cliente cliente, TipoCliente tipo) {
-        Pedido pedido = new Pedido(cliente);
-        Computador computador = factory.crearComputador(tipo.name());
-
-        pedido.setComputador(computador);
-
-        return pedido;
     }
 
     public Pedido crearPedidoPersonalizado(Cliente cliente,

@@ -42,7 +42,7 @@ public class VistaPrincipal extends JFrame {
 
     public VistaPrincipal() {
         controlador = new PedidoControlador();
-        clienteActual = new Cliente("Usuario invitado", "0000", TipoCliente.ESTUDIANTE);
+        clienteActual = new Cliente("Usuario invitado", "203457", TipoCliente.ESTUDIANTE);
         carrito = new ArrayList<>();
         computadoresDisponibles = new ArrayList<>();
 
@@ -462,6 +462,7 @@ public class VistaPrincipal extends JFrame {
 
         txtBuscar.addFocusListener(new FocusAdapter() {
             @Override
+            //borra el texto cuando hacen click en el buscador
             public void focusGained(FocusEvent e) {
                 if (txtBuscar.getText().equals(PLACEHOLDER_BUSQUEDA)) {
                     txtBuscar.setText("");
@@ -471,6 +472,7 @@ public class VistaPrincipal extends JFrame {
 
             @Override
             public void focusLost(FocusEvent e) {
+                //al hacer click por fuera del buscador si no se escribió nada, restablece el texto del placeholder
                 if (txtBuscar.getText().trim().isEmpty()) {
                     txtBuscar.setText(PLACEHOLDER_BUSQUEDA);
                     txtBuscar.setForeground(new Color(107, 114, 128));
