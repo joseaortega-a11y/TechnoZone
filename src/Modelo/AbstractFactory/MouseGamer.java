@@ -9,6 +9,6 @@ public class MouseGamer implements Mouse{
 
     @Override
     public double precio() {
-        return 150;
+        return 150000;
     }
 }

@@ -8,6 +8,6 @@ public class MonitorOficina implements Monitor{
 
     @Override
     public double precio() {
-        return 300;
+        return 300000;
     }
 }

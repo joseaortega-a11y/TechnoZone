@@ -8,6 +8,6 @@ public class MonitorGamer implements Monitor{
 
     @Override
     public double precio() {
-        return 800;
+        return 800000;
     }
 }

@@ -8,6 +8,6 @@ public class MouseOficina implements Mouse{
 
     @Override
     public double precio() {
-        return 30;
+        return 300000;
     }
 }

@@ -9,7 +9,7 @@ public class TecladoGamer implements Teclado{
 
     @Override
     public double precio() {
-        return 200;
+        return 200000;
     }
 }
 

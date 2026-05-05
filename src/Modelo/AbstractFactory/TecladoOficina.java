@@ -8,6 +8,6 @@ public class TecladoOficina implements Teclado{
 
     @Override
     public double precio() {
-        return 60;
+        return 600000;
     }
 }
